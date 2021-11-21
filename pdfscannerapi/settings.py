@@ -137,10 +137,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8000',
-    'http://localhost:3000',
-)
+CORS_ORIGIN_ALLOW_ALL = True
 #JWT
 
 JWT_SECRET_KEY = "App1231231PDFScanner"
