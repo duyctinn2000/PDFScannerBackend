@@ -32,7 +32,7 @@ class LoginView(GenericAPIView):
 
             serializer = UserSerializer(user)
 
-            data = {"user": serializer.data, "token": auth_token}
+            data = {"token": auth_token}
             
             return Response(data, status=status.HTTP_200_OK)
 
