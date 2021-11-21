@@ -10,6 +10,7 @@ pyjwt = "==1.7.1"
 drf-yasg = "*"
 django-heroku = "*"
 gunicorn = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
