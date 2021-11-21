@@ -17,7 +17,7 @@ class JWTAuthentication(authentication.BaseAuthentication):
         try:
             payload = jwt.decode(token,settings.JWT_SECRET_KEY)
             user = User.objects.get(username = payload['username'])
-            return token
+            return (user,token)
             
         except jwt.DecodeError as identifier:
             raise exceptions.AuthenticationFailed('Your token is invalid, login')
