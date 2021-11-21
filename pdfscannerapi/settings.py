@@ -138,11 +138,8 @@ USE_L10N = True
 USE_TZ = True
 
 CORS_ORIGIN_WHITELIST = (
-    'google.com',
-    'hostname.example.com',
-    'localhost:8000',
-    'localhost:3000',
-    '127.0.0.1:9000'
+    'http://localhost:8000',
+    'http://localhost:3000',
 )
 #JWT
 
